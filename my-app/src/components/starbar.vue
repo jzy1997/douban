@@ -1,15 +1,15 @@
 <template>
   <div class="star">
-    <el-rate v-model="score" disabled text-color="#ff9900"></el-rate>
+    <el-rate v-model="value" disabled text-color="#ff9900"></el-rate>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    val: {
-      type: Number,
-      required: true
+    val:{
+      type:Number,
+      default:7.6
     }
   },
   computed: {
@@ -23,7 +23,7 @@ export default {
     };
   },
   created() {
-    this.value = this.val;
+    this.value = this.val/2;
   }
 };
 </script>

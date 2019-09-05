@@ -4,7 +4,9 @@
     <h2>
       <div class="person">
         <div>
-          <div class="star"></div>
+          <div class="star">
+            <starbar :val="obj.score"></starbar>
+          </div>
           <span class="num">{{obj.score}}分</span>
           <span>{{obj.eva}}</span>人评价
         </div>
@@ -45,23 +47,27 @@
 </template>
 
 <script>
+import starbar from "../components/starbar";
 export default {
+  components: {
+    starbar
+  },
   props: ["typ", "id"],
   methods: {
-      open($event){
-          if(this.isopen){
-            this.text = this.obj.bri;
-          }else{
-            this.text = this.obj.briAll;
-          }
-          this.isopen = !this.isopen;
+    open($event) {
+      if (this.isopen) {
+        this.text = this.obj.bri;
+      } else {
+        this.text = this.obj.briAll;
       }
+      this.isopen = !this.isopen;
+    }
   },
   data() {
     return {
       obj: {},
-      text:"",
-      isopen:false
+      text: "",
+      isopen: false
     };
   },
   created() {
@@ -92,10 +98,10 @@ img {
   height: 100%;
   margin-right: 0.1rem;
 }
-.imgss img:last-of-type{
+.imgss img:last-of-type {
   margin-right: 0rem;
 }
-.imgss img{
+.imgss img {
   margin-right: 0.07rem;
   width: 1.3rem;
 }
@@ -175,10 +181,10 @@ img {
   color: #282c34;
 }
 .detailsItem h2 .num {
-  margin-right: 0.2rem;
+  margin-right: 0.07rem;
 }
 .detailsItem h2 .star {
-  width: 0.6rem;
+  width: 0.85rem;
 }
 .detailsItem h2 {
   display: flex;
