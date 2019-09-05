@@ -55,14 +55,18 @@ export default new Router({
       component: Group
     },
     {
-      path:"/details/movie",
-      name:'movieDetails',
-      component:movieDetails
+      path: "/details/movie",
+      name: 'movieDetails',
+      component: movieDetails
     },
     {
-      path:"/details/book",
-      name:'bookDetails',
-      component:bookDetails
+      path: "/details/book",
+      name: 'bookDetails',
+      component: bookDetails
+    },
+    {
+      path: "/*",
+      redirect: "/index"
     }
   ]
 })
