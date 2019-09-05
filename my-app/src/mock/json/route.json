@@ -1,0 +1,76 @@
+{
+    "routes": [
+        {
+            "tit": "电影",
+            "sectit": "影院热映",
+            "titcolor": "color:#2384e8",
+            "rto": "/index"
+        },
+        {
+            "tit": "电视",
+            "sectit": "正在热播",
+            "titcolor": "color:#7a6adb",
+            "rto": "/index"
+        },
+        {
+            "tit": "图书",
+            "sectit": "畅销排行",
+            "titcolor": "color:#9f7860",
+            "rto": "/index"
+        },
+        {
+            "tit": "同城",
+            "sectit": "周末活动",
+            "titcolor": "color:#e6467e",
+            "rto": "/index"
+        },
+        {
+            "tit": "小组",
+            "sectit": "志趣相投",
+            "titcolor": "color:#3dbed1",
+            "rto": "/index"
+        },
+        {
+            "tit": "音乐",
+            "sectit": "群碟榜",
+            "titcolor": "color:#f48f2e",
+            "rto": "/index"
+        },
+        {
+            "tit":"阅读",
+            "sectit":"电子书",
+            "titcolor":"color:brown",
+            "rto":"/index"
+        },
+        {
+            "tit":"游戏",
+            "sectit":"虚拟世界",
+            "titcolor":"color:#6b84cc",
+            "rto":"/index"
+        },
+        {
+            "tit":"应用",
+            "sectit":"玩手机",
+            "titcolor":"color:#6d7de1",
+            "rto":"/index"
+        },
+        {
+            "tit":"东西",
+            "sectit":"心爱之物",
+            "titcolor":"color:#e1644d",
+            "rto":"/index"
+        },
+        {
+            "tit":"FM",
+            "sectit":"红心歌单",
+            "titcolor":"color:#40cfa9",
+            "rto":"/index"
+        },
+        {
+            "tit":"市集",
+            "sectit":"购买原创",
+            "titcolor":"color:#42bd56",
+            "rto":"/index"
+        }
+    ]
+}

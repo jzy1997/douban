@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "tit": "最受欢迎图书 | 虚构类",
+            "url": "/index","haslist":true
+        },
+        {
+            "tit": "最受欢迎图书 | 非虚构类",
+            "url": "/index","haslist":true
+        },
+        {
+            "tit": "豆瓣纸书",
+            "url": "/index",
+            "hasitem":true,
+            "item": [
+                {
+                    "img": "https://img1.doubanio.com/pview/event_poster/median/public/5dd097319abb179.jpg",
+                    "booknam": "造物",
+                    "pirce": 68,
+                    "info": "改变世界的万物图典，3000幅图里的发明与冒险"
+                }
+            ],"haslist":true
+        },
+        {
+            "tit": "发现好书",
+            "url": "/index","haslist":true
+        }
+    ]
+}

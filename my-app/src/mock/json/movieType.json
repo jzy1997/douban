@@ -1,0 +1,21 @@
+{
+    "movietype":[
+        {"tit":"经典","url":"/index"},
+        {"tit":"冷门佳片","url":"/index"},
+        {"tit":"豆瓣高分","url":"/index"},
+        {"tit":"动作","url":"/index"},
+        {"tit":"喜剧","url":"/index"},
+        {"tit":"爱情","url":"/index"},
+        {"tit":"悬疑","url":"/index"},
+        {"tit":"恐怖","url":"/index"},
+        {"tit":"科幻","url":"/index"},
+        {"tit":"治愈","url":"/index"},
+        {"tit":"文艺","url":"/index"},
+        {"tit":"成长","url":"/index"},
+        {"tit":"动画","url":"/index"},
+        {"tit":"华语","url":"/index"},
+        {"tit":"欧美","url":"/index"},
+        {"tit":"韩国","url":"/index"},
+        {"tit":"日本","url":"/index"}
+    ]
+}
