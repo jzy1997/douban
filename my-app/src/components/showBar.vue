@@ -2,11 +2,11 @@
   <div class="showbar">
     <div class="showItem" v-for="(v,i) in showarr" :key="i">
       <router-link :to="{name:routeTo,params:{id:i,type:typ}}">
-      <!-- <router-link :to="{name:"要去的路由",params:{id:"要传的值"}"> -->
+        <!-- <router-link :to="{name:"要去的路由",params:{id:"要传的值"}"> -->
         <img :src="v.img" alt />
         <p>{{v.movieName}}</p>
         <div class="bottom">
-          <div class="star"></div>
+          <star-bar :val="v.num"></star-bar>
           <h2>{{v.num}}</h2>
         </div>
       </router-link>
@@ -15,7 +15,11 @@
 </template>
 
 <script>
+import starBar from "../components/starbar";
 export default {
+  components:{
+    starBar
+  },
   props: {
     num: {
       type: Number,
@@ -27,13 +31,21 @@ export default {
     }
   },
   computed: {
-    routeTo(){
-      return this.typ+"Details";
+    routeTo() {
+      return this.typ + "Details";
+    },
+    score() {
+      if (this.value > 5) {
+        return this.value - 5;
+      }else{
+        return this.value / 2;
+      }
     }
   },
   data() {
     return {
-      showarr: []
+      showarr: [],
+      value: 9.1
     };
   },
   created() {
@@ -49,7 +61,7 @@ export default {
 </script>
 
 <style scoped>
-a{
+a {
   text-decoration: none;
 }
 .showbar {
@@ -62,6 +74,18 @@ a{
   display: inline-block;
   margin-right: 0.1rem;
   font-size: 0px;
+}
+.el-rate__icon {
+    font-size: 18px;
+    margin-right: 0px;
+    color: #C0C4CC;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.el-rate__item {
+    font-size: 0;
+    vertical-align: middle;
+    margin-top: .02rem;
 }
 .showItem:last-of-type {
   margin-right: 0px;
