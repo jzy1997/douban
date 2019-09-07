@@ -16,44 +16,44 @@ import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 Vue.component('icon', Icon)
 
-router.beforeEach((to, from, next) => {
-  // console.log(to);
-  // console.log(from);
+// router.beforeEach((to, from, next) => {
+//   // console.log(to);
+//   // console.log(from);
 
-  if (to.path == "/status") {
-    // 先判断是否登录
-    if (getCookie("userInfo")) {
-      next();
-    } else {
-      alert("先登录");
-      next("/login");
-    }
-  } else if (to.path == "/group") {
-    if (getCookie("userInfo")) {
-      next();
-    } else {
-      alert("先登录");
-      next("/login");
-    }
-  } else if (to.path == "/details/book") {
-    if (getCookie("userInfo")) {
-      next();
-    } else {
-      alert("先登录");
-      next("/login");
-    }
-  }else if (to.path == "/details/movie") {
-    if (getCookie("userInfo")) {
-      next();
-    } else {
-      alert("先登录");
-      next("/login");
-    }
-  }
-  else {
-    next();
-  }
-})
+//   if (to.path == "/status") {
+//     // 先判断是否登录
+//     if (getCookie("userInfo")) {
+//       next();
+//     } else {
+//       alert("先登录");
+//       next("/login");
+//     }
+//   } else if (to.path == "/group") {
+//     if (getCookie("userInfo")) {
+//       next();
+//     } else {
+//       alert("先登录");
+//       next("/login");
+//     }
+//   } else if (to.path == "/details/book") {
+//     if (getCookie("userInfo")) {
+//       next();
+//     } else {
+//       alert("先登录");
+//       next("/login");
+//     }
+//   }else if (to.path == "/details/movie") {
+//     if (getCookie("userInfo")) {
+//       next();
+//     } else {
+//       alert("先登录");
+//       next("/login");
+//     }
+//   }
+//   else {
+//     next();
+//   }
+// })
 
 /* eslint-disable no-new */
 new Vue({

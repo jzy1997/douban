@@ -25,6 +25,7 @@ export default {};
   overflow: hidden;
   margin: 0 auto;
   width: 45%;
+  margin-top:.4rem;
 }
 
 .foot {
